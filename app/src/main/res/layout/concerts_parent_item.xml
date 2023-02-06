@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary3"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <TextView
+        android:id="@+id/concertsGenreTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/upcoming_concerts_title"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/showAllVideosTV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/ic_arrow_white_right"
+        android:text="@string/show_all_videos"
+        android:textColor="#979797"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<!--
+    <TextView
+        android:id="@+id/concertsWBgTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:background="@color/colorPrimary2"
+        android:padding="4dp"
+
+        android:text="CONCERT"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvConcertsChild" />
+
+    <TextView
+        android:id="@+id/concertsDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="28 Jan 2023"
+        android:textColor="#979797"
+        app:layout_constraintBottom_toBottomOf="@+id/concertsWBgTitleTV"
+        app:layout_constraintStart_toEndOf="@+id/concertsWBgTitleTV"
+        app:layout_constraintTop_toBottomOf="@+id/rvConcertsChild" />
+
+    <TextView
+        android:id="@+id/concertDescRVTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/concert_rv_title"
+        android:textColor="#979797"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concertsWBgTitleTV" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvConcertsChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/concertsGenreTV"
+        tools:listitem="@layout/concerts_itme" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

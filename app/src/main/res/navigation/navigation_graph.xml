@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/concertsFragment">
+
+    <fragment
+        android:id="@+id/concertsFragment"
+        android:name="com.example.georgianphil.MainFragments.ConcertsFragment"
+        android:label="Georgian Philharmonic"
+        tools:layout="@layout/fragment_concerts" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.example.georgianphil.MainFragments.VideosFragment"
+        android:label="Videos"
+        tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/ticketsFragment"
+        android:name="com.example.georgianphil.MainFragments.TicketsFragment"
+        android:label="Tickets"
+        tools:layout="@layout/fragment_tickets" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.georgianphil.MainFragments.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.georgianphil.MainFragments.LoginFragment"
+        android:label="LogIn"
+        tools:layout="@layout/fragment_login" />
+</navigation>

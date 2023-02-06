@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary3"
+    android:layout_height="match_parent"
+    tools:context=".MainFragments.ConcertsFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/videoViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/orchestra"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/musicianstLL2"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginEnd="10dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Orhchestra Musicians"
+               android:background="@color/colorPrimary2"
+               android:drawableRight="@drawable/ic_baseline_music_note_24"
+               android:textColor="@color/white"
+               android:padding="5dp"
+               android:textSize="18sp"/>
+
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/concertsLL1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/musicianstLL2">
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/mainConcertsRV"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="20dp"
+               android:orientation="vertical"
+               app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+               tools:listitem="@layout/musician_parent_item" />
+
+       </LinearLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+</ScrollView>

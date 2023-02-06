@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/concertsFragment"
+        android:icon="@drawable/music"
+        android:title="Concerts" />
+    <item
+        android:id="@+id/videosFragment"
+        android:icon="@drawable/videos"
+        android:title="Videos" />
+    <item
+        android:id="@+id/ticketsFragment"
+        android:icon="@drawable/tickets"
+        android:title="Tickets" />
+    <item
+        android:id="@+id/searchFragment"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+    <item
+        android:id="@+id/loginFragment"
+        android:icon="@drawable/loginuser"
+        android:title="Login" />
+</menu>
